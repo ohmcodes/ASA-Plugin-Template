@@ -2,4 +2,5 @@
 Simple template for ARK: Survival Ascended server plugins using [GameServersHub's ServerAPI](https://github.com/ServersHub/ServerAPI).
 
 RUN
-`git clone --recurse-submodules`
+`git pull --recurse-submodules`
+`git clone --recursive`
