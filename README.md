@@ -4,3 +4,5 @@ Simple template for ARK: Survival Ascended server plugins using [GameServersHub'
 RUN
 `git pull --recurse-submodules`
 `git clone --recursive`
+
+`vcpkg x-update-baseline [options] [--add-initial-baseline] [--dry-run]`
