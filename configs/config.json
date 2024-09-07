@@ -3,6 +3,6 @@
     "Debug": true
   },
   "Commands": {
-    "CMD1":  "/command"
+    "TestCMD":  "/test"
   }
 }

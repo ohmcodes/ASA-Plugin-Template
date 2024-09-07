@@ -774,7 +774,12 @@
     <ClInclude Include="..\AsaApi\AsaApi\Core\Public\Requests.h" />
     <ClInclude Include="..\AsaApi\AsaApi\Core\Public\Timer.h" />
     <ClInclude Include="..\AsaApi\AsaApi\Core\Public\Tools.h" />
+    <ClInclude Include="src\Commands.h" />
+    <ClInclude Include="src\Hooks.h" />
     <ClInclude Include="src\Public\Plugin.h" />
+    <ClInclude Include="src\Tests.h" />
+    <ClInclude Include="src\Timers.h" />
+    <ClInclude Include="src\Utils.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -824,7 +829,7 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)src\Public;..\AsaApi\AsaApi\Core\Public;..\AsaApi\AsaApi\Core\Public\API\UE</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\Public;..\AsaApi\AsaApi\Core\Public;..\AsaApi\AsaApi\Core\Public\API\UE;$(SolutionDir)..\ASA-Plugins\Permissions\Permissions\Public;$(SolutionDir)..\ASA-Plugins\ArkShop\ArkShop\Public</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -832,7 +837,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>$(SolutionDir)..\AsaApi\out_lib\AsaApi.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)..\AsaApi\out_lib\AsaApi.lib;$(SolutionDir)..\ASA-Plugins\Permissions\out_lib\Permissions.lib;$(SolutionDir)..\ASA-Plugins\ArkShop\out_lib\ArkShop.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>if exist "$(TargetDir)$(TargetFileName).arkapi" del /q "$(TargetDir)$(TargetFileName).arkapi"</Command>
