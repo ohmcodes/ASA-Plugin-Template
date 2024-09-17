@@ -22,7 +22,18 @@ RUN (DEPRECATED)
   - Go to Project > <ProjectName> properties
   - VC++ Directories (includes Directories, Library Directories)
   - C/C++ > General (Additional Include Directories)
-  - Linker > Input 
+  - Linker > Input
+ 
+## GUIDES
+- Download and Install `ASA DevKit` on Epic Games (this will help you a lot if you need to look for certain functionality or Blueprints)
+- AsaApi is not Updated if you found some missing functions run your dedicated server where AsaApi is installed and navigate to `ShooterGame\Binaries\Win64\ArkApi\Cache` open `cached_key.cache` for bitfields and `cached_offsets.txt` for functions
+- `https://dumper.pelayori.com/` to get the Typename for example paste `UPrimalItem` and it will gives you the updated class (Note: you need to do some modification on some parts you'll know when you build it)
+- 
+
+## DEBUGGING
+- AsaApi Logs path `ShooterGame\Binaries\Win64\logs`
+- Ark Logs path `ShooterGame\Saved\Logs` check for `crashcallstack.txt` sometimes it returns a line where you have errors
+
 
 # Enjoy!
 
